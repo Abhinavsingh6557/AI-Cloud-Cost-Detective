@@ -1,0 +1,16 @@
+date,service,resource_id,usage_type,cost
+2026-06-01,EC2,i-001,Compute Hours,18.50
+2026-06-01,S3,bucket-logs,Storage,4.20
+2026-06-01,EBS,vol-001,Volume Storage,7.80
+2026-06-01,NAT Gateway,nat-001,Data Processing,15.30
+2026-06-01,CloudWatch,logs-app,Log Storage,6.90
+2026-06-02,EC2,i-001,Compute Hours,19.00
+2026-06-02,S3,bucket-logs,Storage,4.40
+2026-06-02,EBS,vol-002,Unattached Volume,9.50
+2026-06-02,NAT Gateway,nat-001,Data Processing,16.20
+2026-06-02,CloudWatch,logs-app,Log Storage,7.50
+2026-06-03,EC2,i-002,Compute Hours,35.00
+2026-06-03,S3,bucket-backup,Storage,12.00
+2026-06-03,EBS,vol-003,Unattached Volume,11.20
+2026-06-03,Elastic IP,eip-001,Idle IP,5.00
+2026-06-03,CloudWatch,logs-debug,Log Storage,18.00
