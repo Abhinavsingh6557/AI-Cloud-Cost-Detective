@@ -1,4 +1,5 @@
 import pandas as pd
+from services.ai_recommender import generate_ai_recommendations
 
 
 def analyze_costs(csv_path: str):
@@ -102,13 +103,15 @@ def analyze_costs(csv_path: str):
     if score < 0:
         score = 0   
                 
-
+    ai_text = generate_ai_recommendations(summary, issues)
+    
     return {
         "total_cost": total_cost,
         "summary": summary,
         "service_costs": service_costs.to_dict(orient="records"),
         "issues_found": issues,
         "optimization_score": score,
-        "recommendations": recommendations
+        "recommendations": recommendations,
+        "ai_text": ai_text
         
     }

@@ -252,11 +252,17 @@ function App() {
 
       <h2>AI Recommendations</h2>
 
-      {data.recommendations.map((item, index) => (
-        <div className="recommendation" key={index}>
-          {item}
-        </div>
-      ))}
+{data.ai_text && (
+  <div className="ai-box">
+    <pre>{data.ai_text}</pre>
+  </div>
+)}
+
+{data.recommendations.map((item, index) => (
+  <div className="recommendation" key={index}>
+    {item}
+  </div>
+))}
 
       <h2>Detected Issues</h2>
 

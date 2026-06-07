@@ -123,6 +123,28 @@ p {
   font-weight: 500;
 }
 
+/* AI Generated Recommendation Box */
+
+.ai-box {
+  background: #111827;
+  border: 1px solid #334155;
+  border-left: 5px solid #38bdf8;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.ai-box pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #e5e7eb;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
 .issue {
   background: #1e293b;
   border-left: 5px solid #f97316;
